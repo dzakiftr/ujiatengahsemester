@@ -7,10 +7,9 @@
     tools:context=".MainActivity">
 
 <ListView
-    android:id="@+id/listview"
+    android:id="@+id/list_job"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
 </ListView>
 
 </LinearLayout>

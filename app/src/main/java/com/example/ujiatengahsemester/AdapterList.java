@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 
 public class AdapterList extends ArrayAdapter<DataJob> {
 
@@ -60,5 +62,6 @@ public class AdapterList extends ArrayAdapter<DataJob> {
         TextView posisi;
         TextView lokasi;
         TextView lastupdt;
+        TextView deskripsi;
     }
 }
