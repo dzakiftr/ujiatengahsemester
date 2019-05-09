@@ -11,6 +11,7 @@ class DataJob {
     String senior;
     String type;
     String func;
+    String lastupdt;
 
     public String getAbout() {
         return about;
@@ -82,5 +83,13 @@ class DataJob {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getLastupdt() {
+        return lastupdt;
+    }
+
+    public void setLastupdt(String lastupdt) {
+        this.lastupdt = lastupdt;
     }
 }
