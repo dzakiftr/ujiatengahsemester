@@ -51,4 +51,36 @@ class DataJob {
     public void setImageurl(String imageurl) {
         this.imageurl = imageurl;
     }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
+    }
+
+    public String getSenior() {
+        return senior;
+    }
+
+    public void setSenior(String senior) {
+        this.senior = senior;
+    }
+
+    public String getFunc() {
+        return func;
+    }
+
+    public void setFunc(String func) {
+        this.func = func;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }
