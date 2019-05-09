@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/companypic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/companypic"
+        >
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:ellipsize="end"
+            android:textColor="@color/textdark"
+            android:layout_marginBottom="5dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/textlight"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Name"
+            android:textSize="18dp"
+            android:textColor="@color/textlight"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City, Province"
+            android:textColor="@color/textlight"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:textColor="@color/textlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="1 hour ago"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textlight"
+        android:layout_below="@id/container"/>
+</RelativeLayout>

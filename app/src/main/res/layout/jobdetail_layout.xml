@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/heading_bg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#2A3DA0"/>
+
+    <ImageView
+        android:id="@+id/companypicdetail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/compdet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/companypicdetail"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/jobposition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textStyle="bold"
+            android:textSize="33dp"
+            android:textColor="@color/textdark"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/jobcompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/textdark"
+                android:textSize="17dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●"
+                android:textColor="@color/textdark"
+                android:textSize="17dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/joblocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City, Province"
+                android:textColor="@color/textdark"
+                android:textSize="17dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/joblastupdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_margin="3dp"
+        android:text="Last updated"
+        android:drawableLeft="@drawable/ic_access_time"
+        android:drawablePadding="8dp"
+        android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/textlight"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compdet"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Description"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/textdark"/>
+
+        <TextView
+            android:id="@+id/jobdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textdark"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/textlight"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seniority Level"
+            android:textSize="20dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/textdark"/>
+
+        <TextView
+            android:id="@+id/joblevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textdark"
+            android:text="Level"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employment Type"
+            android:textSize="20dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/textdark"/>
+
+        <TextView
+            android:id="@+id/jobemptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textdark"
+            android:text="Type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Function"
+            android:textSize="20dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/textdark"/>
+
+        <TextView
+            android:id="@+id/jobfunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textdark"
+            android:text="function"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/textlight"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/textdark"/>
+
+        <TextView
+            android:id="@+id/jobcompanydesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textdark"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+
+    </LinearLayout>
+</RelativeLayout>
